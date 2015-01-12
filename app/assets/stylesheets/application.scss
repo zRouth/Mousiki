@@ -1,0 +1,91 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+ *= require_tree .
+ *= require_self
+ *= require foundation_and_overrides
+
+ */
+body {
+  background-color: slategray;
+}
+
+.orbit-caption {
+   position: absolute;
+   top: 15%;
+   left: 25%;
+   color: white;
+   font-size: 230%;
+   font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+
+.data-orbit {
+   position: relative;
+   margin-left: 0;
+}
+
+.orbit-caption{
+  z-index: 2;
+}
+
+.data-orbit{
+  z-index: 1;
+}
+
+#album-text {
+  font-size: 150%;
+  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 26.3999996185303px;
+  margin-left: 370px;
+  margin-right: 50px;
+  margin-top: 200px;
+}
+
+#album-list {
+  margin-left: 210px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+#albums {
+  margin-top: 15px;
+}
+
+.th {
+  height: 300px;
+  width: 450px;
+  padding: 15px;
+  margin: 15px;
+}
+
+#about {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+// #album-list#albums a img {
+//   height: 250px;
+//   width: 250px;
+// }
