@@ -4,8 +4,12 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def create
-    @user = User.new
+  def show
+    @user = User.find(params[:id])
+    #fetch tracks that a user has has saved in his library and
+    # pull the corresponding artist
+
+
   end
 
 end
