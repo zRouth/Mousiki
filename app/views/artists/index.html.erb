@@ -2,17 +2,18 @@
   Here are the artists that you listen to on spotify and their upcoming shows in Denver
 </div>
 
-<div class="container" id="artist-list">
+
+<div class="row" id="artist-list">
   <% @artists.each do |artist| %>
-  <p><%= artist.name %>
-    <%= artist.date %>
-    <%= artist.time %>
-    <%= artist.venue %>
+  <div class="small-2 large-4 columns">
+      <div><%= artist.name %></div>
+    </div>
+  <div class="small-4 large-4 columns">
+    <div><%= artist.date %> @ <%= artist.time %></div>
+  </div>
+  <div class="small-6 large-4 columns">
+    <div> <%= artist.venue %></div>
+  </div>
   <% end %>
-</p>
-  <div class="row">
-  <div class="small-2 large-4 columns">...</div>
-  <div class="small-4 large-4 columns">...</div>
-  <div class="small-6 large-4 columns">...</div>
 </div>
-</div>
+<!-- </div> -->
