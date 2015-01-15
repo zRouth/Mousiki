@@ -3,8 +3,10 @@
 </div>
 
 
+
+<% @artists.each do |artist| %>
 <div class="row" id="artist-list">
-  <% @artists.each do |artist| %>
+  <div class="row"><div class="large-12 columns"><p><br></p></div></div>
   <div class="small-2 large-4 columns">
       <div><%= artist.name %></div>
     </div>
@@ -14,6 +16,8 @@
   <div class="small-6 large-4 columns">
     <div> <%= artist.venue %></div>
   </div>
+</div>
+  <div class="row"><div class="large-12 columns"><p><br></p></div></div>
   <% end %>
 </div>
 <!-- </div> -->
