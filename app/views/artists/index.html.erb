@@ -1,1 +1,10 @@
-Put artists here from the seed!
+<div class="container" id="artist-title">
+  Here are the artists that you listen to on spotify and their upcoming shows in Denver
+</div>
+
+<% @artists.each do |artist| %>
+  <p><%= artist.name %>
+  <%= artist.date %>
+  <%= artist.time %>
+  <%= artist.venue %>
+<% end %></p>

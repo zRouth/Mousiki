@@ -7,8 +7,6 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @client = client(@user)
-    #fetch tracks that a user has has saved in his library and
-    # pull the corresponding artist
   end
 
   private
