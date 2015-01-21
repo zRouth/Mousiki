@@ -22,7 +22,7 @@
 .image-splash {
   z-index: -1;
   margin-top: -93px;
-  background: url("/assets/lotusbassplayer.jpg") no-repeat center center fixed;
+  background: asset_url("lotusbassplayer.jpg") no-repeat center center fixed;
   height: 4024px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
