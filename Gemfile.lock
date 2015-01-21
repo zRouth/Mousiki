@@ -47,8 +47,6 @@ GEM
       rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
-    bootstrap-sass (3.3.1.0)
-      sass (~> 3.2)
     brakeman (2.6.3)
       erubis (~> 2.6)
       fastercsv (~> 1.5)
@@ -121,6 +119,9 @@ GEM
       fog-core
       fog-json
     formatador (0.2.5)
+    foundation-rails (5.5.0.0)
+      railties (>= 3.1.0)
+      sass (>= 3.2.0, < 3.4)
     haml (4.0.6)
       tilt
     hashie (3.3.2)
@@ -282,7 +283,6 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   better_errors
   binding_of_caller
-  bootstrap-sass (~> 3.3.1)
   brakeman
   cancancan (~> 1.9)
   capybara
@@ -291,6 +291,7 @@ DEPENDENCIES
   faker
   figaro
   fog (~> 1.23.0)
+  foundation-rails
   jbuilder (~> 2.0)
   jquery-rails
   launchy
