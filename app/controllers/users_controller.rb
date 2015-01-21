@@ -1,3 +1,12 @@
+module Spotify
+  class Client
+    def me_tracks
+      run(:get, '/v1/me/tracks', [200])
+    end
+  end
+end
+
+
 class UsersController < ApplicationController
 
   def new

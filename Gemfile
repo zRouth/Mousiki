@@ -21,6 +21,7 @@ gem 'autoprefixer-rails'
 gem 'cancancan', '~> 1.9'
 gem 'brakeman', :require => false
 gem 'figaro'
+gem 'foundation-rails'
 
 group :doc do
   gem 'sdoc', '~> 0.4.0'

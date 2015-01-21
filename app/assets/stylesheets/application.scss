@@ -15,23 +15,59 @@
  *= require_self
  *= require foundation_and_overrides
 
- */
-body {
-  background-color: slategray;
+//  */
+// body {
+//   background-image: url(https://joeariniello.files.wordpress.com/2012/05/redrocksnight.jpg);
+// }
+.image-splash {
+  z-index: -1;
+  margin-top: -93px;
+  background: url("/assets/lotusbassplayer.jpg") no-repeat center center fixed;
+  height: 4024px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .orbit-caption {
    position: absolute;
-   top: 15%;
-   left: 25%;
+   top: 10%;
+   left: 40%;
    color: white;
-   font-size: 230%;
+   font-size: 430%;
+   font-weight: bold;
    font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 }
 
 .data-orbit {
-   position: relative;
-   margin-left: 0;
+   position: absolute;
+   top: 22%;
+   left: 34%;
+   color: white;
+   font-size: 130%;
+   font-weight: bold;
+   font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, Appl
+}
+
+.artist-title {
+   position: absolute;
+   top: 22%;
+   left: 24%;
+   color: white;
+   font-size: 130%;
+   font-weight: bold;
+   font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, Appl
+}
+
+.artist-list {
+   position: absolute;
+   top: 32%;
+   left: 24%;
+   color: white;
+   font-size: 130%;
+   font-weight: bold;
+   font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, Appl
 }
 
 .orbit-caption{
