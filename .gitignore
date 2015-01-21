@@ -14,3 +14,12 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+temp/*
+log/I
+.DS_STORE
+coverage
+.env
+scratch
+.rspec
+public/assets
