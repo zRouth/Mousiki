@@ -1,5 +1,4 @@
 <div class="artist-list">
-  <%= @client.me %>
-  <%#= @client.me_tracks %>
-  <%= @client.artist('6kBDZFXuLrZgHnvmPu9NsG') %>
+<!--   <%= @client.me %> -->
+  <%= @client.me_tracks['items'].first['track']['artists'].first['name'] %>
 </div>
