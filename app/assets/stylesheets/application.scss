@@ -62,10 +62,20 @@
 
 .user {
    position: absolute;
-   top: 16%;
-   left: 13%;
+   top: 24%;
+   left: 14%;
    color: white;
-   font-size: 130%;
+   font-size: 150%;
+   font-weight: bold;
+   font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, Appl
+}
+
+.welcome-user {
+   position: absolute;
+   top: 10%;
+   left: 35%;
+   color: white;
+   font-size: 330%;
    font-weight: bold;
    font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, Appl
 }
