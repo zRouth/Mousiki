@@ -33,11 +33,11 @@
 .orbit-caption {
    position: absolute;
    top: 35%;
-   left: 36%;
+   left: 38%;
    color: white;
    font-size: 630%;
-   font-weight: bold;
-   font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+   font-weight: 200;
+   font-family: 'Helvetica';
 }
 
 .data-orbit {
@@ -46,8 +46,8 @@
    left: 28%;
    color: white;
    font-size: 200%;
-   font-weight: bold;
-   font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, Appl
+   font-weight: 100;
+   font-family: 'Helvetica';
 }
 
 .artist-title {
@@ -139,11 +139,6 @@
   margin: 15px;
 }
 
-#about {
-  background-color: black;
-  color: white;
-}
-
 #artist-title {
   font-size: 250%;
   font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
@@ -170,6 +165,19 @@
 }
 
 
+#about-padding {
+  position: absolute;
+  top: 125%;
+}
+
+#about {
+  position: absolute;
+   top: 155%;
+   left: 5%;
+   color: white;
+   font-size: 32px;
+   font-family: 'Helvetica';
+}
 
 
 
