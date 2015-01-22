@@ -1,4 +1,5 @@
 <div class="artist-list">
-<!--   <%= @client.me %> -->
-  <%= @client.me_tracks['items'].map { |item| item['track']['artists'].first['name']} %>
+  <% @artists.each do |name| %>
+  <%= name %>
+  <% end %>
 </div>
