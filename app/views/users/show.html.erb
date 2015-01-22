@@ -1,4 +1,4 @@
 <div class="artist-list">
 <!--   <%= @client.me %> -->
-  <%= @client.me_tracks['items'].first['track']['artists'].first['name'] %>
+  <%= @client.me_tracks['items'].map { |item| item['track']['artists'].first['name']} %>
 </div>
