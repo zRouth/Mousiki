@@ -23,7 +23,7 @@
   z-index: -1;
   margin-top: -93px;
   background: asset_url("lotusbassplayer.jpg") no-repeat center center fixed;
-  height: 4024px;
+  height: 2024px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -173,9 +173,10 @@
 #about {
   position: absolute;
    top: 155%;
-   left: 5%;
+   left: 1%;
    color: white;
    font-size: 32px;
+   font-weight: 100;
    font-family: 'Helvetica';
 }
 
