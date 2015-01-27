@@ -14,6 +14,7 @@
   <% @artists.each do |name| %>
     <div class="small-2 large-4 columns">
       <%= name %>
+      <%=  link_to "Track Artist", :controller => 'artists', :action => "show", :name => name %>
     </div>
   <% end %>
 </div>
