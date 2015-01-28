@@ -1,12 +1,22 @@
 <div class="artist-list">
 <div class="row" id="artist-list">
-  <% @calendar.each do |event| %>
-  <ul class="small-block-grid-3">
-    <li>Artist: <%= event["performance"].first["artist"]["displayName"] %></li>
-    <li>Venue: <%= event["displayName"] %></li>
-    <li>Country: <%= event["venue"]["metroArea"]["country"]["displayName"]%>
-    <%= event["venue"]["metroArea"]["displayName"] %></li>
-  </ul>
-  <% end %>
-  <br>
+  <table>
+    <thead>
+    <tr>
+      <th width="200">Artist</th>
+      <th>Venue and Date</th>
+      <th width="150">Country</th>
+      <th width="150">Buy Tickets</th>
+    </tr>
+  </thead>
+     <tbody>
+      <tr>
+        <% @calendar.each do |event| %>
+          <td>Artist: <%= event["performance"].first["artist"]["displayName"] %></td>
+          <td>Venue: <%= event["displayName"] %></td>
+          <td>Country: <%= event["venue"]["metroArea"]["country"]["displayName"]%>
+          <%= event["venue"]["metroArea"]["displayName"] %></td>
+      </tr>
+          <% end %>
+  </div>
 </div>

@@ -10,13 +10,16 @@
 
 
 <div class="artist-list">
-<div class="row" id="artist-list">
-  <% @artists.each do |name| %>
-    <div class="small-2 large-4 columns">
-      <%= name %>
-      <%=  link_to "Track Artist", :controller => 'artists', :action => "show", :name => name %>
-    </div>
-  <% end %>
-</div>
+  <div class="row" id="artist-list">
+    <table>
+      <tbody>
+      <tr>
+        <% @artists.each do |name| %>
+        <td><%= name %></td>
+        <td><%= link_to "Track Artist", :controller => 'artists',
+                    :action => "show", :name => name %></td>
+        </tr>
+        <% end %>
+  </div>
 </div>
 

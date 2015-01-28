@@ -114,6 +114,7 @@ $include-html-global-classes: $include-html-classes;
 // $oil         : #333333;
 // $jet         : #222222;
 // $black       : #000000;
+$darkcyan:  #008B8B;
 
 // We use these as default colors throughout
 // $primary-color: #008CBA;
@@ -1270,8 +1271,8 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-table-classes: $include-html-classes;
 
 // These control the background color for the table and even rows
-// $table-bg: $white;
-// $table-even-row-bg: $snow;
+// $table-bg: $darkcyan;
+// $table-even-row-bg: $darkcyan;
 
 // These control the table cell border style
 // $table-border-style: solid;
