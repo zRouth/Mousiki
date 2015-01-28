@@ -7,6 +7,18 @@ require 'rspec/rails'
 require 'capybara/rails'
 require 'capybara/rspec'
 
+OmniAuth.config.test_mode = true
+
+omniauth_hash = {
+  uid: '123abc',
+  provider: 'spotify',
+  credentials: { token: 'abc123' },
+  info: { name: 'Doug Rattman', nickname: 'rattman',
+          email: 'doug@aperturelabs.com' }
+}
+
+OmniAuth.config.add_mock(:spotify, omniauth_hash)
+
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
 # run as spec files by default. This means that files in spec/support that end

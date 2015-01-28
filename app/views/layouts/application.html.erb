@@ -24,13 +24,11 @@
 
   <section class="top-bar-section">
     <!-- Right Nav Section -->
-    <% if @user %>
-      <ul class="right">
-        <li class="active"><a href="/users/1">zRouth</a></li>
-      </ul>
-    <% else %>
     <ul class="right">
-      <li class="active"><a href="/auth/spotify">Login</a></li>
+    <% if current_user %>
+      <li class="active"><%= link_to "#{current_user.name}", '#' %></li>
+    <% else %>
+      <li class="active"><%= link_to 'Logout', signout_path %></li>
       <!-- <li class="has-dropdown">
         <a href="#">Sign Up</a>
         <ul class="dropdown">

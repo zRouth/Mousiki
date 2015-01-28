@@ -7,6 +7,12 @@ module Spotify
 end
 
 class UsersController < ApplicationController
+  protect_from_forgery with: :null_session
+
+  def index
+    @users = User.all
+  end
+
   def new
     @user = User.new
   end
