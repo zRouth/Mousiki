@@ -1,0 +1,6 @@
+<% @calendar.each do |event| %>
+<%= event %>
+<%= event["venue"]["metroArea"]["country"] %>
+<%= event["venue"]["metroArea"]["country"]["displayName"] %>
+<%= event["location"] %>
+<% end %>
