@@ -18,7 +18,7 @@
 temp/*
 log/I
 .DS_STORE
-coverage
+/coverage
 .env
 scratch
 .rspec
