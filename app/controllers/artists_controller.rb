@@ -34,8 +34,14 @@ class ArtistsController < ApplicationController
     request = "http://api.songkick.com/api/3.0/artists/#{@artist_id}/calendar.json?apikey=Pk55qLCyIJJesrG6"
     response = Faraday.get(request)
     body = JSON.parse(response.body)
-    body["resultsPage"]["results"]["event"].select do |event|
-      event["performance"].first["artist"]["id"] == @artist_id
+
+    if body["resultsPage"]["results"] == {}
+      # notice "There are no upcoming shows for that artist, check back later"
+      redirect_to root_path
+    else
+      body["resultsPage"]["results"]["event"].select do |event|
+        event["performance"].first["artist"]["id"] == @artist_id
+      end
     end
   end
 
