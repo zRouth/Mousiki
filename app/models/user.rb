@@ -1,5 +1,4 @@
 class User < ActiveRecord::Base
-
   def self.find_or_create_from_auth_hash(auth_hash)
     if user = User.find_by_email(auth_hash[:info][:email])
       user.update_attributes(token: auth_hash[:credentials][:token])
@@ -14,5 +13,4 @@ class User < ActiveRecord::Base
       )
     end
   end
-
 end
