@@ -3,9 +3,10 @@ Rails.application.routes.draw do
   get '/artist/:name', to: 'artists#show'
   get 'signin' => 'sessions#new', as: 'signin'
   get 'signout' => 'sessions#destroy', as: 'signout'
-  resources :sessions
+
+  resources :sessions, only: [:new, :create, :destroy]
   resources :users
-  resources :artists, only: [:index, :create, :update, :destroy, :edit]
+  resources :artists
 
   root 'welcome#index'
 end
