@@ -1,27 +1,34 @@
-<div class="large-12 columns text-center user2">
-  <%= @calendar.first['performance'].first['artist']['displayName'] %>
-</div>
-
-
-<div class="row" >
-<div class="artist-list" id="artist-list2">
-  <table>
-    <thead>
-    <tr>
-      <th width="200">Artist</th>
-      <th>Venue and Date</th>
-      <th width="150">Country</th>
-      <th width="150">Buy Tickets</th>
-    </tr>
-  </thead>
-     <tbody>
-      <tr>
-        <% @calendar.each do |event| %>
-          <td> <%= event["performance"].first["artist"]["displayName"] %></td>
-          <td> <%= event["displayName"] %></td>
-          <td> <%= event["venue"]["metroArea"]["country"]["displayName"]%>
-          <%= event["venue"]["metroArea"]["displayName"] %></td>
-      </tr>
-          <% end %>
+<% if @calendar.empty? %>
+  <div class="large-12 columns text-center user">
+    There are no calendar dates for this artist.  Check back later.
   </div>
-</div>
+<% else %>
+  <div class="large-12 columns text-center user2">
+    <%= @calendar.first['performance'].first['artist']['displayName'] %>
+  </div>
+
+
+  <div class="row" >
+  <div class="artist-list" id="artist-list2">
+    <table>
+      <thead>
+      <tr>
+        <th width="200">Artist</th>
+        <th>Venue and Date</th>
+        <th width="150">Country</th>
+        <th width="150">Buy Tickets</th>
+      </tr>
+    </thead>
+       <tbody>
+        <tr>
+          <% @calendar.each do |event| %>
+            <td> <%= event["performance"].first["artist"]["displayName"] %></td>
+            <td> <%= event["displayName"] %></td>
+            <td> <%= event["venue"]["metroArea"]["country"]["displayName"]%>
+            <%= event["venue"]["metroArea"]["displayName"] %></td>
+            <td><%= link_to "Buy Tickets", href=event["uri"] %></td>
+        </tr>
+            <% end %>
+    </div>
+  </div>
+<% end %>

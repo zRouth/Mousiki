@@ -18,14 +18,16 @@ class ArtistsController < ApplicationController
   def get_artist_id
     response = Faraday.get(artist_request)
     body = JSON.parse(response.body)
-    body['resultsPage']['results']['artist'].first['id']
+    if body['resultsPage']['results']['artist']
+      body['resultsPage']['results']['artist'].first['id']
+    end
   end
 
   def get_artist_calendar
     response = Faraday.get(calendar_request)
     body = JSON.parse(response.body)
 
-    if body['resultsPage']['results'] == {}
+    if body['resultsPage']['results'] == {} || !body['resultsPage']['results']
       redirect_to root_path, notice: 'No upcoming shows for that artist'
     else
       body['resultsPage']['results']['event'].select do |event|
