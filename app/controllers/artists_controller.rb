@@ -20,28 +20,39 @@ class ArtistsController < ApplicationController
   private
 
   def get_artist_id
-    request = "http://api.songkick.com/api/3.0/search/artists.json?query=#{params[:name]}&apikey=Pk55qLCyIJJesrG6"
-    response = Faraday.get(request)
+    response = Faraday.get(artist_request)
     body = JSON.parse(response.body)
-    # this will bloow up if the results page is empty!!!
-    # extract object :)
     body['resultsPage']['results']['artist'].first['id']
   end
 
   def get_artist_calendar
-    request = "http://api.songkick.com/api/3.0/artists/#{@artist_id}/calendar.json?apikey=Pk55qLCyIJJesrG6"
-    response = Faraday.get(request)
+    response = Faraday.get(calendar_request)
     body = JSON.parse(response.body)
 
     if body['resultsPage']['results'] == {}
-      # notice "There are no upcoming shows for that artist, check back later"
-      redirect_to root_path
+      redirect_to root_path, notice: 'No upcoming shows for that artist'
     else
       body['resultsPage']['results']['event'].select do |event|
         event['performance'].first['artist']['id'] == @artist_id
       end
     end
- end
+  end
+
+  def songkick
+    'http://api.songkick.com/api/3.0/'
+  end
+
+  def songkick_api
+    'apikey=Pk55qLCyIJJesrG6'
+  end
+
+  def artist_request
+    songkick + "search/artists.json?query=#{params[:name]}&" + songkick_api
+  end
+
+  def calendar_request
+    songkick + "artists/#{@artist_id}/calendar.json?" + songkick_api
+  end
 
   # def us_tour_dates_only
   #   body["resultsPage"]["results"]["event"]["venue"]["metroArea"]["country"]["displayName"]
