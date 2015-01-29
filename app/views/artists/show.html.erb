@@ -1,15 +1,10 @@
-<div class="welcome-user">
-  <%= "Welcome #{current_user.name}" %>
-</div>
-<div class="user2">
-  Here is the Calendar for <%= @calendar.first['performance'].first['artist']['displayName'] %>
+<div class="large-12 columns text-center user2">
+  <%= @calendar.first['performance'].first['artist']['displayName'] %>
 </div>
 
 
-
-
-<div class="artist-list">
-<div class="row" id="artist-list2">
+<div class="row" >
+<div class="artist-list" id="artist-list2">
   <table>
     <thead>
     <tr>
@@ -22,9 +17,9 @@
      <tbody>
       <tr>
         <% @calendar.each do |event| %>
-          <td>Artist: <%= event["performance"].first["artist"]["displayName"] %></td>
-          <td>Venue: <%= event["displayName"] %></td>
-          <td>Country: <%= event["venue"]["metroArea"]["country"]["displayName"]%>
+          <td> <%= event["performance"].first["artist"]["displayName"] %></td>
+          <td> <%= event["displayName"] %></td>
+          <td> <%= event["venue"]["metroArea"]["country"]["displayName"]%>
           <%= event["venue"]["metroArea"]["displayName"] %></td>
       </tr>
           <% end %>

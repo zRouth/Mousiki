@@ -32,8 +32,8 @@
 
 .orbit-caption {
    position: absolute;
-   top: 35%;
-   left: 38%;
+   top: 33%;
+   left: 36%;
    color: white;
    font-size: 630%;
    font-weight: 200;
@@ -43,7 +43,7 @@
 .data-orbit {
    position: absolute;
    top: 54%;
-   left: 28%;
+   left: 24%;
    color: white;
    font-size: 200%;
    font-weight: 100;
@@ -56,38 +56,34 @@
    left: 24%;
    color: white;
    font-size: 130%;
-   font-weight: bold;
-   font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, Appl
+   font-weight: 200;
+   font-family: 'Helvetica';
 }
 
 .user {
    position: absolute;
    top: 24%;
-   left: 14%;
    color: white;
    font-size: 150%;
-   font-weight: bold;
-   font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, Appl
+   font-family: 'Helvetica';
 }
 
 .user2 {
    position: absolute;
-   top: 24%;
-   left: 38%;
+   top: 20%;
    color: white;
-   font-size: 150%;
-   font-weight: bold;
-   font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, Appl
+   font-size: 350%;
+   font-weight: 100;
+   font-family: 'Helvetica'
 }
 
 .user-message {
    position: absolute;
-   top: 29%;
-   left: 19%;
+   top: 32%;
    color: white;
    font-size: 130%;
-   font-weight: bold;
-   font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, Appl
+   font-weight: 200;
+   font-family: 'Helvetica'
 }
 
 .user-message2 {
@@ -96,28 +92,35 @@
    left: 19%;
    color: white;
    font-size: 130%;
-   font-weight: bold;
-   font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, Appl
+   font-weight: 200;
+   font-family: 'Helvetica';
 }
 
 .welcome-user {
    position: absolute;
    top: 10%;
-   left: 35%;
    color: white;
-   font-size: 330%;
-   font-weight: bold;
-   font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, Appl
+   font-size: 360%;
+   font-weight: 200;
+   font-family: 'Helvetica';
 }
 
 .artist-list {
    position: absolute;
    top: 42%;
-   left: 15%;
+   left: 6%;
    color: white;
    font-size: 130%;
-   font-weight: bold;
-   font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, Appl
+   font-family: 'Helvetica';
+}
+
+.user-spotify-list {
+   position: absolute;
+   top: 42%;
+   left: 11%;
+   color: white;
+   font-size: 130%;
+   font-family: 'Helvetica';
 }
 
 .orbit-caption{
@@ -130,11 +133,10 @@
 
 #album-text {
   font-size: 250%;
-  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  font-family: Helvetica;
   font-size: 30px;
   font-style: normal;
   font-variant: normal;
-  font-weight: bold;
   line-height: 26.3999996185303px;
   margin-left: 285px;
   margin-right: 50px;
@@ -161,11 +163,10 @@
 
 #artist-title {
   font-size: 250%;
-  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  font-family: Helvetica;
   font-size: 30px;
   font-style: normal;
   font-variant: normal;
-  font-weight: bold;
   line-height: 26.3999996185303px;
   margin-left: 155px;
   margin-right: 50px;
@@ -177,7 +178,7 @@
   margin-left: 100%;
   font-weight: bold;
   font-size: 24px;
-  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  font-family: Helvetica;
   // border-style: solid;
   // border-width: 5px;
   // border-radius: 20px;
@@ -186,9 +187,8 @@
 }
 
 #artist-list2 {
-  font-weight: bold;
   font-size: 24px;
-  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  font-family: Helvetica;
 }
 
 

@@ -2,10 +2,6 @@ class ArtistsController < ApplicationController
   def show
     @artist_id = get_artist_id
     @calendar = get_artist_calendar
-    # get_calendar_performance
-    # get_calendar_venue
-    # get_calendar_location
-    # get_calendar_display_name_and_date
   end
 
   # pass the artist name to params
@@ -54,23 +50,4 @@ class ArtistsController < ApplicationController
     songkick + "artists/#{@artist_id}/calendar.json?" + songkick_api
   end
 
-  # def us_tour_dates_only
-  #   body["resultsPage"]["results"]["event"]["venue"]["metroArea"]["country"]["displayName"]
-  # end
-
-  # def get_calendar_performance
-  #   @calendar["performance"]
-  # end
-
-  # def get_calendar_venue
-  #   @calendar["venue"]
-  # end
-
-  # def get_calendar_location
-  #   @calendar["location"]
-  # end
-
-  # def get_calendar_display_name_and_date
-  #   @calendar["displayName"]
-  # end
 end
