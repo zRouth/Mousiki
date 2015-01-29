@@ -30,6 +30,12 @@
   background-size: cover;
 }
 
+.flash-message {
+  position: absolute;
+  top: 58%;
+  left: 24%;
+}
+
 .orbit-caption {
    position: absolute;
    top: 33%;
@@ -60,12 +66,55 @@
    font-family: 'Helvetica';
 }
 
+.welcome-user {
+   position: absolute;
+   top: 10%;
+   color: white;
+   font-size: 480%;
+   font-weight: 200;
+   font-family: 'Helvetica';
+}
+
+.username {
+  position: absolute;
+  top: 10%;
+  color: white;
+  font-size: 300%;
+  font-weight: 200;
+  font-family: 'Helvetica';
+}
+
 .user {
    position: absolute;
-   top: 28%;
+   top: 68%;
+   left: 14%;
    color: white;
-   font-size: 150%;
+   font-size: 250%;
    font-weight: 200;
+   font-family: 'Helvetica';
+}
+
+.playlist {
+  position: absolute;
+  top: 12%;
+  left: 55%;
+  color: white;
+  font-size: 130%;
+  font-family: 'Helvetica';
+}
+
+.user-spotify-list {
+   position: absolute;
+   top: 42%;
+   left: 55%;
+   color: white;
+   font-size: 130%;
+   font-family: 'Helvetica';
+}
+
+#user-spotify-tracks {
+   color: white;
+   font-size: 24px;
    font-family: 'Helvetica';
 }
 
@@ -97,15 +146,6 @@
    font-family: 'Helvetica';
 }
 
-.welcome-user {
-   position: absolute;
-   top: 10%;
-   color: white;
-   font-size: 380%;
-   font-weight: 200;
-   font-family: 'Helvetica';
-}
-
 .artist-list {
    position: absolute;
    top: 42%;
@@ -115,14 +155,6 @@
    font-family: 'Helvetica';
 }
 
-.user-spotify-list {
-   position: absolute;
-   top: 42%;
-   left: 11%;
-   color: white;
-   font-size: 130%;
-   font-family: 'Helvetica';
-}
 
 .orbit-caption{
   z-index: 2;

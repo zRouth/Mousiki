@@ -28,7 +28,7 @@ class ArtistsController < ApplicationController
     body = JSON.parse(response.body)
 
     if body['resultsPage']['results'] == {} || !body['resultsPage']['results']
-      redirect_to root_path, notice: 'No upcoming shows for that artist'
+      redirect_to user_path(current_user), notice: 'No upcoming shows for that artist'
     else
       body['resultsPage']['results']['event'].select do |event|
         event['performance'].first['artist']['id'] == @artist_id

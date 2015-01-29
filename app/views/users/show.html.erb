@@ -1,21 +1,34 @@
+<div class="flash-message">
+<%= render partial: "shared/flash" %>
+</div>
 <div class="large-12 columns text-center welcome-user">
   <%= "Welcome #{current_user.name}" %>
 </div>
-<div class="large-12 columns text-center user">
-  Here are the artists you listen to on spotify
+<div class="large-12 columns text-left user">
+  Add a track from any artist<br>
+  to add it to your playlist
 </div>
 
+
 <div class="user-spotify-list">
-  <div class="row" id="artist-list">
-    <table>
-      <tbody>
+  <table>
+    <thead>
+      <tr>
+        <th width="200">Artist</th>
+        <th>Shows</th>
+      </tr>
+    </thead>
+    <tbody>
       <tr>
         <% @artists.each do |name| %>
-        <td><%= name %></td>
-        <td><%= link_to "Track Artist", :controller => 'artists',
-                    :action => "show", :name => name %></td>
-        </tr>
-        <% end %>
-  </div>
+        <td> <%= name %></td>
+        <td><%= link_to "Artist Calendar", :controller => 'artists',
+                  :action => "show", :name => name %></td>
+      </tr>
+      </tr>
+      <% end %>
+    </tbody>
+</table>
+</div>
 </div>
 
