@@ -70,7 +70,27 @@
    font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, Appl
 }
 
+.user2 {
+   position: absolute;
+   top: 24%;
+   left: 38%;
+   color: white;
+   font-size: 150%;
+   font-weight: bold;
+   font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, Appl
+}
+
 .user-message {
+   position: absolute;
+   top: 29%;
+   left: 19%;
+   color: white;
+   font-size: 130%;
+   font-weight: bold;
+   font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, Appl
+}
+
+.user-message2 {
    position: absolute;
    top: 29%;
    left: 19%;
@@ -154,6 +174,7 @@
 }
 
 #artist-list {
+  margin-left: 100%;
   font-weight: bold;
   font-size: 24px;
   font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
@@ -162,6 +183,12 @@
   // border-radius: 20px;
   // border-color: darkcyan;
   // box-shadow: 1px 3px 5px black;
+}
+
+#artist-list2 {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
 }
 
 
