@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     @user = User.find_or_create_from_auth_hash(auth_hash)
     reset_session
     session[:user_id] = @user.id
-    redirect_to user_path(@user), notice: 'Signed in!'
+    redirect_to user_path(@user), notice: 'You have succesfully loged in with spotify!'
   end
 
   def destroy
