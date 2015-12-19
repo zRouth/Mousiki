@@ -7,3 +7,6 @@ that allows you to listen to almost any music you want. So if you have a
 Spotify account you can log in and this application will automatically populate the songkick with the songs you
 have saved on spotify and you will always know when the music you listen to
 comes to to play in the city that you live!
+
+
+Application developed to better understand API endpoints, Oauth, and Rescue
