@@ -10,3 +10,5 @@ comes to to play in the city that you live!
 
 
 Application developed to better understand API endpoints, Oauth, and Rescue
+
+Front end reworked this week.
